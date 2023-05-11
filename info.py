@@ -22,7 +22,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5553dc39f968b364d4856.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/63f5eab27ad9d6655287f.jpg https://telegra.ph/file/cae358470923029386958.jpg https://telegra.ph/file/1c7d537d997853ba3c9dd.jpg https://telegra.ph/file/cb7ea8cf09ab245ddee55.jpg https://telegra.ph/file/55a4eb0be070dd8f212ed.jpg https://telegra.ph/file/b52d665846d45ad456622.jpg https://telegra.ph/file/e7d09a0a9c4c89114b569.jpg https://telegra.ph/file/81e838bc60412c54149ea.jpg https://telegra.ph/file/400012f5e779baeace102.jpg https://telegra.ph/file/32adc6d7b6640a1d02511.jpg https://telegra.ph/file/23a4b4e413772630b9797.jpg https://telegra.ph/file/a8a24bf0069f7ea4b3abc.jpg https://telegra.ph/file/3225c77f2e7e041742e7c.jpg https://telegra.ph/file/96dcf590f3cafa42420b7.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/ea40f1b53dd3b6315c130.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/2a888a370f479f4338f7c.jpg")
@@ -39,7 +39,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
 reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-SUPPORT_CHAT_ID = -1001792675255
+SUPPORT_CHAT_ID = -1001784393195
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
@@ -52,9 +52,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'raixchat')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'South_movie_in_auto_filter')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
-IMDB = is_enabled((environ.get('IMDB', "False")), True)
+IMDB = is_enabled((environ.get('IMDB', "True")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
